@@ -1,3 +1,16 @@
+            document.body.addEventListener('touchstart', function(e) {
+                osontouchdetectstart(e);
+                e.preventDefault();
+            }, false);
+            document.body.addEventListener('touchmove', function(e) {
+                osontouchdetectmove(e);
+                e.preventDefault();
+            }, false);
+            document.body.addEventListener('touchend', function(e) {
+                osontouchdetectend(e);
+                e.preventDefault();
+            }, false);
+            
             
             var osontouch = {
             	 active : 0,
